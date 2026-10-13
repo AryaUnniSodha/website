@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InAmigos Foundation — Small acts. Lasting change.</title>
+<meta name="description" content="Design prototype for InAmigos Foundation: transparent giving, campaigns, impact, volunteering and community stories.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="wordmark" href="#top" aria-label="InAmigos Foundation, home"><span class="mark" aria-hidden="true"></span>InAmigos <em>Foundation</em></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Primary">
+      <a href="#about">About</a><a href="#work">Our Work</a><a href="#impact">Impact</a><a href="#stories">Stories</a><a href="#involved">Get Involved</a>
+      <a class="btn btn-donate" href="#donate">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Small acts.<br>Lasting change.</h1>
+      <p class="lede">Together, we can create opportunities, strengthen communities, and build a future where every person has the chance to thrive.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#impact">Explore Our Impact</a>
+        <a class="btn btn-ghost" href="#involved">Become a Volunteer</a>
+      </div>
+      <p class="mission">Education for children, skills for women, and healthier communities — built with the people who live there.</p>
+    </div>
+    <figure class="hero-img">
+      <img src="assets/img/hero.jpg" alt="Neighbours, women and children gathered beside a painted community mural, reading and talking together" width="1400" height="781">
+      <figcaption>Community-led learning and care</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 01 DONATE -->
+<section class="sec sage" id="donate" data-note="1">
+  <div class="wrap two">
+    <div>
+      <p class="label">01 — Give with confidence</p>
+      <h2>Giving should be simple, and you should always know where it goes.</h2>
+      <p>Make giving simple and transparent by showing visitors how their contributions support the foundation’s work. Choose an amount, decide whether to give once or monthly, and see the purpose before you commit.</p>
+      <div class="trust">
+        <strong>Transparency note</strong>
+        <p>The foundation should publish verified fund allocation and impact reports here: <span class="ph">[link to confirmed report]</span>.</p>
+      </div>
+    </div>
+    <form class="card give" id="give-form" novalidate>
+      <fieldset>
+        <legend>Frequency</legend>
+        <div class="seg">
+          <label><input type="radio" name="freq" value="once" checked><span>Give once</span></label>
+          <label><input type="radio" name="freq" value="monthly"><span>Monthly</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Amount (₹)</legend>
+        <div class="amounts">
+          <label><input type="radio" name="amt" value="500"><span>₹500</span></label>
+          <label><input type="radio" name="amt" value="1000" checked><span>₹1,000</span></label>
+          <label><input type="radio" name="amt" value="2500"><span>₹2,500</span></label>
+          <label><input type="radio" name="amt" value="5000"><span>₹5,000</span></label>
+        </div>
+        <label class="field" for="custom">Or enter your own amount</label>
+        <input id="custom" type="number" inputmode="numeric" min="1" placeholder="e.g. 750">
+      </fieldset>
+      <p class="chip" id="cause" hidden></p>
+      <p class="summary" id="summary" aria-live="polite"></p>
+      <button class="btn btn-primary full" type="submit">Continue to give</button>
+      <p class="proto" id="give-msg" aria-live="polite">Visual prototype only. No payment is processed and no payment partner is connected.</p>
+    </form>
+  </div>
+</section>
+
+<!-- 02 CAMPAIGNS -->
+<section class="sec" id="work" data-note="2">
+  <div class="wrap">
+    <p class="label">02 — Campaigns that matter</p>
+    <h2 class="wide">Help visitors discover current initiatives and understand how they can support each cause.</h2>
+    <div class="camps">
+      <article class="camp big">
+        <img src="assets/img/edu.jpg" alt="Children and young volunteers doing a craft activity at a community learning hub">
+        <div class="body">
+          <h3>Education for Every Child</h3>
+          <p>Safe, bright learning spaces where curiosity comes first and no child is left to learn alone.</p>
+          <div class="bar" role="img" aria-label="Illustrative progress, 60 percent"><i style="width:60%"></i></div>
+          <p class="small">Illustrative progress — replace with confirmed figures.</p>
+          <button class="btn btn-primary" data-cause="Education for Every Child">Discover the Initiative</button>
+        </div>
+      </article>
+      <article class="camp wide-card">
+        <img src="assets/img/women.jpg" alt="Women applauding together at a skills workshop">
+        <div class="body">
+          <h3>Women’s Skills and Empowerment</h3>
+          <p>Training, mentoring and networks that help women lead their own livelihoods.</p>
+          <button class="link" data-cause="Women’s Skills and Empowerment">Discover the Initiative</button>
+        </div>
+      </article>
+      <article class="camp tint">
+        <div class="body">
+          <h3>Stronger, Healthier Communities</h3>
+          <p>Community days, health support and shared spaces that bring neighbours together.</p>
+          <div class="bar" role="img" aria-label="Illustrative progress, 35 percent"><i style="width:35%"></i></div>
+          <p class="small">Illustrative progress.</p>
+          <button class="link" data-cause="Stronger, Healthier Communities">Discover the Initiative</button>
+        </div>
+        <img src="assets/img/community.jpg" alt="Volunteers helping at a community health and aid stall">
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 03 IMPACT -->
+<section class="sec forest" id="impact" data-note="3">
+  <div class="wrap">
+    <p class="label">03 — Make impact visible</p>
+    <h2 class="wide">Publish verified outcomes and progress updates so visitors can understand the difference the organization makes.</h2>
+    <ul class="metrics">
+      <li><span class="ph-big">[Verified total]</span>People supported</li>
+      <li><span class="ph-big">[Insert confirmed figure]</span>Educational opportunities created</li>
+      <li><span class="ph-big">[Insert confirmed figure]</span>Women engaged in empowerment initiatives</li>
+      <li><span class="ph-big">[Verified total]</span>Community programs delivered</li>
+    </ul>
+    <button class="link light" aria-expanded="false" aria-controls="measure" id="measure-btn">How we measure impact</button>
+    <div id="measure" hidden>Placeholder: describe the method here — what is counted, who verifies it, how often figures are updated, and where the full report can be read. All figures above are placeholders until confirmed.</div>
+  </div>
+</section>
+
+<!-- 04 VOLUNTEER -->
+<section class="sec" id="involved" data-note="4">
+  <div class="wrap two">
+    <div>
+      <p class="label">04 — Turn compassion into action</p>
+      <h2>Your time can open new possibilities.</h2>
+      <p>Give interested people a simple, accessible way to offer their time and skills. Mentoring, event support, outreach, teaching or fundraising — there is a role for every kind of help.</p>
+    </div>
+    <form class="card vol" id="vol-form" novalidate>
+      <div class="field-row"><label for="name">Full name</label><input id="name" required autocomplete="name"><span class="err" id="e-name"></span></div>
+      <div class="field-row"><label for="email">Email address</label><input id="email" type="email" required autocomplete="email"><span class="err" id="e-email"></span></div>
+      <div class="cols">
+        <div class="field-row"><label for="interest">Area of interest</label>
+          <select id="interest" required><option value="">Choose one</option><option>Mentoring</option><option>Event support</option><option>Community outreach</option><option>Education</option><option>Women’s skill training</option><option>Health awareness</option><option>Photography &amp; media</option><option>Digital &amp; design skills</option><option>Fundraising</option></select><span class="err" id="e-interest"></span></div>
+        <div class="field-row"><label for="avail">Availability</label>
+          <select id="avail" required><option value="">Choose one</option><option>Weekday mornings</option><option>Weekday evenings</option><option>Weekends</option><option>Flexible</option></select><span class="err" id="e-avail"></span></div>
+      </div>
+      <div class="field-row"><label for="msg">Short message <span class="opt">(optional)</span></label><textarea id="msg" rows="3"></textarea></div>
+      <div class="field-row check"><input id="consent" type="checkbox" required><label for="consent">I agree to be contacted about volunteering.</label><span class="err" id="e-consent"></span></div>
+      <button class="btn btn-primary full" type="submit">Join Our Volunteer Community</button>
+      <p class="proto">Demo form. Nothing is sent or stored; a backend would be needed to reach the foundation.</p>
+      <p class="ok" id="vol-ok" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- 05 STORIES -->
+<section class="sec sage" id="stories" data-note="5">
+  <div class="wrap">
+    <p class="label">05 — Let community voices lead</p>
+    <div class="story-grid">
+      <figure class="quote">
+        <blockquote>“The classroom felt like it belonged to us. I came to learn, and I stayed to teach the younger ones.”</blockquote>
+        <figcaption>Sample volunteer voice — fictional content for this prototype</figcaption>
+      </figure>
+      <img class="story-img" src="assets/img/story.jpg" alt="Children and a teacher learning together on mats under a shaded shelter">
+      <article class="card story-card">
+        <h3>From learner to peer mentor</h3>
+        <p>A short, consent-based story would sit here, told in the person’s own words and shared with their permission.</p>
+        <p class="small">Fictional sample. Replace with real, consented stories.</p>
+        <button class="link" id="more-stories" aria-expanded="false">Explore more stories</button>
+        <p class="proto" id="more-msg" hidden>Prototype state: a stories archive page would open here.</p>
+      </article>
+    </div>
+    <div class="docs"><h3>Openness by design</h3><p class="small">Documents visitors can check. Each link goes live once the foundation confirms the file.</p><ul><li>Annual report <span class="ph">to be added</span></li><li>Financial statements <span class="ph">to be added</span></li><li>Registration &amp; certificates <span class="ph">to be added</span></li><li>Governance &amp; team <span class="ph">to be added</span></li><li>Contact &amp; grievance channel <span class="ph">to be added</span></li></ul></div>
+    <p class="share-note">Share consent-based stories and genuine feedback to help visitors understand the human impact of the foundation’s work.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" style="background-image:linear-gradient(rgba(23,63,53,.78),rgba(23,63,53,.88)),url(assets/img/cta.jpg)">
+  <div class="wrap">
+    <h2>Be part of someone’s brighter tomorrow.</h2>
+    <p>Every meaningful change begins when someone chooses to take part.</p>
+    <div class="actions center"><a class="btn btn-light" href="#donate">Support Our Work</a><a class="btn btn-outline-light" href="#involved">Volunteer With Us</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><a class="wordmark light" href="#top"><span class="mark" aria-hidden="true"></span>InAmigos <em>Foundation</em></a>
+      <p>Creating opportunities and strengthening communities through education, women’s empowerment and community development.</p></div>
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#work">Our Work</a><a href="#impact">Impact</a><a href="#stories">Stories</a><a href="#involved">Get Involved</a></nav>
+    <div><p><span class="ph">[Address — to be confirmed]</span><br><span class="ph">[Phone — to be confirmed]</span><br><span class="ph">[Email — to be confirmed]</span></p>
+      <p class="soc"><a href="#top">Instagram</a> <a href="#top">LinkedIn</a> <a href="#top">Facebook</a> <span class="ph">[handles to confirm]</span></p></div>
+  </div>
+  <div class="wrap legal"><a href="#top">Privacy policy</a><span>© 2026 InAmigos Foundation. Design prototype; registration details to be confirmed.</span></div>
+</footer>
+
+<button class="notes-toggle" aria-pressed="false">Show design notes</button>
+<script src="assets/app.js"></script>
+</body>
+</html>
